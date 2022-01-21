@@ -1,0 +1,193 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sketch Classification</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+      
+        <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js" type="text/javascript"></script>
+        
+        
+          
+        <link rel="stylesheet" type="text/css" href="style.css">
+      </head>
+      
+      <body>
+
+        <h3 style="color:red;">CASE STUDY BETWEEN GOOGLE LENS AND MOBILE NET</h3>
+
+        <img src="download.png">
+        <h3 style="color:red;">VS</h3>
+
+        <h3 class="mobile btn btn-info">Mobilenet</h3>
+        <br><br>
+          <ol>
+              <div class="col-sm-4 col-xs-12" style="background-color: grey; border-radius: 25px; width: 80%;">
+                  <li class="col-sm-4 col-xs-12">
+                      <b>Tested Image-</b>
+                      <br>
+                      <img src="pen.jpg" width="140px" height="300px">
+                  </li>
+                  <span>
+                  <h5 class="col-sm-4 col-xs-12" class="google-lens" style="text-align: right; background-color: white; border-radius: 50px; height:40px; text-align: center;">
+                      <br>Output On <b style="color:red;">Google Lens:</b>
+                      <span>Pen</span>
+                  </h5>
+                  
+                  <h5 class="col-sm-4 col-xs-12" class="google-lens" style="text-align: right; background-color: white; border-radius: 50px; height:40px; text-align: center;">
+                    <br>Output On <b style="color:red;">Mobilenet:</b>
+                    <span>Mice , Microphone</span>
+                </h5>
+
+                <div class="mini_result col-xs-12">
+                    <h4>Result - <hr>
+                        <h5 color="white">Google Lens is more accrate</h5>
+                        <br><br><br><br><br><br>
+
+                        
+                    </h4>
+                
+                </div>
+            </span>
+                <br>
+              </div>
+              
+              <br><br>
+              <div class="col-sm-4 col-xs-12" style="background-color: grey; border-radius: 25px; width: 80%;">
+                <li class="col-sm-4 col-xs-12">
+                    <b>Tested Image-</b>
+                    <br>
+                    <img src="book.jpg" width="140px" height="300px">
+                </li>
+                <span>
+                <h5 class="col-sm-4 col-xs-12" class="google-lens" style="text-align: right; background-color: white; border-radius: 50px; height:40px; text-align: center;">
+                    <br>Output On <b style="color:red;">Google Lens:</b>
+                    <span>Board game</span>
+                </h5>
+                
+                <h5 class="col-sm-4 col-xs-12" class="google-lens" style="text-align: right; background-color: white; border-radius: 50px; height:40px; text-align: center;">
+                  <br>Output On <b style="color:red;">Mobilenet:</b>
+                  <span>Headphone</span>
+              </h5>
+
+              <div class="mini_result col-xs-12">
+                  <h4 >Result - <hr>
+                    <h5 color="white">Mobilenet is more accrate</h5>
+                      <br><br><br><br><br><br>
+
+                      
+                  </h4>
+              
+              </div>
+          </span>
+              <br>
+            </div>
+            <br><br>
+            <div class="col-sm-4 col-xs-12" style="background-color: grey; border-radius: 25px; width: 80%;">
+                <li class="col-sm-4 col-xs-12">
+                    <b>Tested Image-</b>
+                    <br>
+                    <img src="calculator.jpg" width="140px" height="300px">
+                </li>
+                <span>
+                <h5 class="col-sm-4 col-xs-12" class="google-lens" style="text-align: right; background-color: white; border-radius: 50px; height:40px; text-align: center;">
+                    <br>Output On <b style="color:red;">Google Lens:</b>
+                    <span>Calculator</span>
+                </h5>
+                
+                <h5 class="col-sm-4 col-xs-12" class="google-lens" style="text-align: right; background-color: white; border-radius: 50px; height:40px; text-align: center;">
+                  <br>Output On <b style="color:red;">Mobilenet:</b>
+                  <span>Telephone</span>
+              </h5>
+
+              <div class="mini_result col-xs-12">
+                  <h4>Result - <hr>
+                    <h5 color="white">Google Lens is more accrate</h5>
+                      <br><br><br><br><br><br>
+
+                      
+                  </h4>
+              
+              </div>
+          </span>
+              <br>
+            </div>
+            <br><br>
+            <div class="col-sm-4 col-xs-12" style="background-color: grey; border-radius: 25px; width: 80%;">
+                <li class="col-sm-4 col-xs-12">
+                    <b>Tested Image-</b>
+                    <br>
+                    <img src="waterBottle.jpg" width="140px" height="300px">
+                </li>
+                <span>
+                <h5 class="col-sm-4 col-xs-12" class="google-lens" style="text-align: right; background-color: white; border-radius: 50px; height:40px; text-align: center;">
+                    <br>Output On <b style="color:red;">Google Lens:</b>
+                    <span>Water Bottle</span>
+                </h5>
+                
+                <h5 class="col-sm-4 col-xs-12" class="google-lens" style="text-align: right; background-color: white; border-radius: 50px; height:40px; text-align: center;">
+                  <br>Output On <b style="color:red;">Mobilenet:</b>
+                  <span>Flask</span>
+              </h5>
+
+              <div class="mini_result col-xs-12">
+                  <h4>Result - <hr>
+                    <h5 color="white">Google Lens is more accrate</h5>
+                      <br><br><br><br><br><br>
+
+                      
+                  </h4>
+              
+              </div>
+          </span>
+              <br>
+            </div>
+            <br><br>
+            <div class="col-sm-4 col-xs-12" style="background-color: grey; border-radius: 25px; width: 80%;">
+                <li class="col-sm-4 col-xs-12">
+                    <b>Tested Image-</b>
+                    <br>
+                    <img src="cup.jpg" width="140px" height="300px">
+                </li>
+                <span>
+                <h5 class="col-sm-4 col-xs-12" class="google-lens" style="text-align: right; background-color: white; border-radius: 50px; height:40px; text-align: center;">
+                    <br>Output On <b style="color:red;">Google Lens:</b>
+                    <span>Bowl</span>
+                </h5>
+                
+                <h5 class="col-sm-4 col-xs-12" class="google-lens" style="text-align: right; background-color: white; border-radius: 50px; height:40px; text-align: center;">
+                  <br>Output On <b style="color:red;">Mobilenet:</b>
+                  <span>Bowl</span>
+              </h5>
+
+              <div class="mini_result col-xs-12">
+                  <h4>Result - <hr>
+                      <br><br><br><br><br><br>
+
+                      
+                  </h4>
+              
+              </div>
+          </span>
+              <br>
+            </div>
+            
+            <br><br>
+            
+          </ol>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <div id="final">
+            <h4>I have tested 5 images,
+                <br>
+              Google Lens predicted 3 of accurately and MobileNet is less accurately<br>
+              Google lens is more accurate according to my case study.
+            </h4>
+        </div>
+          
+      </body>
+</html>
